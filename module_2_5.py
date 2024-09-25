@@ -1,0 +1,17 @@
+def get_matrix(n, m, value):    #   параметры n, m и value.
+    matrix = []                 #  список matrix внутри функции get_matrix.
+    for i in range(n):                 # цикл for для кол-ва строк матрицы, n повторов.
+        matrix.append([])         # В первом цикле добавляем пустой список в список matrix.
+        for j in range(m):      #  Внутренний цикл  для кол-ва столбцов матрицы, m повторов.
+            matrix[i].append(value)   #   добавленный пустой список значениями value.
+    print(matrix)
+    return matrix               #   возвращает значение переменной matrix.
+
+n = int(input('Задайте количество строк матрицы    :'))
+m = int(input('Задайте количество столбцов матрицы :'))
+value = input(f'Задайте значения матрицы : ')
+print('-------' * m)
+matrix = get_matrix(n, m, value)    # Выведите на экран(консоль) результат работы функции get_matix.
+
+for i in matrix:
+    print(*i)
