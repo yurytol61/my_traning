@@ -11,4 +11,4 @@ def get_password(number):
 n = int(input('Введите целое число от 3 до 20: '))
 
 result = get_password(n)
-print('Пароль:', result)5
+print('Пароль:', result)
